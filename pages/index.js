@@ -8,7 +8,7 @@ export default function Home() {
   async function onSubmitForm(values) {
     let config = {
       method: "post",
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      url: `/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
@@ -57,7 +57,7 @@ export default function Home() {
             </span>
           </div>
           <div>
-            <label for="email" className="sr-only">
+            <label htmlFor="email" className="sr-only">
               Email
             </label>
             <input
@@ -91,7 +91,7 @@ export default function Home() {
             </span>
           </div>
           <div>
-            <label for="phone" className="sr-only">
+            <label htmlFor="phone" className="sr-only">
               Phone
             </label>
             <input
@@ -103,7 +103,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <label for="message" className="sr-only">
+            <label htmlFor="message" className="sr-only">
               Message
             </label>
             <textarea
